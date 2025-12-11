@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Paws & Preferences 🐾</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Swipe through adorable cats and discover your favourite kitty style." />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="app">
+        <header class="app-header">
+            <h1>Paws & Preferences</h1>
+            <p>Swipe right to ❤️ like, swipe left to 👎 pass.</p>
+        </header>
+
+        <main class="app-main">
+            <!-- card/swipe section -->
+            <section id="card-section">
+                <div id="card-stack" class="card-stack">
+                </div>
+
+                <p id="status-text" class="status-text">Loading cats…</p>
+
+                <div class="actions">
+                    <button id="dislike-btn" class="action-btn action-btn--nope">
+                        👎 Nope
+                    </button>
+                    <button id="like-btn" class="action-btn action-btn--like">
+                        ❤️ Like
+                    </button>
+                </div>
+
+                <p class="hint-text">
+                    Tip: Drag the top card left/right on mobile, or use the buttons.
+                </p>
+            </section>
+
+            <!-- summary section -->
+            <section id="summary-section" class="summary hidden">
+                <h2>Your favourite kitties 🐱</h2>
+                <p id="summary-text"></p>
+                <div id="liked-grid" class="liked-grid">
+                    <!-- liked cats will appear here -->
+                </div>
+                <button id="restart-btn" class="restart-btn">
+                    Start over
+                </button>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <small>Images by <a href="https://cataas.com/" target="_blank" rel="noopener noreferrer">Cataas</a> • Built
+                for Netizen Testing Sdn. Bhd.</small>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
